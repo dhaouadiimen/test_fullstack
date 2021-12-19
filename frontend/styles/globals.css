@@ -1,0 +1,113 @@
+html {
+  height: 100%;
+  font-family: 'Courier', Courier, monospace;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#f7f8f8, #ebeaec);
+}
+
+.container {
+  width: 360px;
+  height: 360px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-wrapper {
+  display: flex;
+  position: relative;
+}
+
+.less-symbol {
+  border-top: 30px solid #e95e1e;
+  border-right: 30px solid transparent;
+  height: 0;
+  width: 90px;
+  transform: rotate(-45deg);
+}
+
+.less-symbol::before {
+  position: absolute;
+  content: '';
+  border-left: 30px solid #e95e1e;
+  border-bottom: 30px solid transparent;
+  height: 60px;
+  width: 0;
+}
+
+/* Make the symbol less sharp */
+.less-symbol i {
+  position: absolute;
+  background-color: #2a6be5;
+  width: 2px;
+  height: 42.1px;
+  transform: rotate(45deg);
+  top: -35.6px;
+  left: 104.4px;
+  border-radius: 1px;
+  box-shadow: 0 127.3px #2a6be5;
+}
+
+.greater-symbol {
+  border-top: 30px solid #2a6be5;
+  border-left: 30px solid transparent;
+  height: 0;
+  width: 80px;
+  margin-top: 55px;
+  margin-left: -30px;
+  transform: rotate(45deg);
+}
+
+.greater-symbol::before {
+  position: absolute;
+  content: '';
+  border-right: 30px solid #2a6be5;
+  border-bottom: 30px solid transparent;
+  height: 60px;
+  width: 0;
+  left: 60px;
+  margin: 0px 0px -90px -40px;
+}
+/* Make the symbol less sharp */
+.greater-symbol i {
+  position: absolute;
+  background-color: #2a6be5;
+  width: 2px;
+  height: 42.1px;
+  transform: rotate(-45deg);
+  top: -35.6px;
+  left: -15.6px;
+  border-radius: 1px;
+  box-shadow: 0 127.3px #AA8439;
+}
+.sub-title{
+  margin: revert;
+}
+.col{
+margin: 17px;
+}
+.divider{
+  margin-left: 60px;
+}
+#bt-success{
+  margin-left: 150px;
+  width: 120px;
+}
+a.nav-link{
+  color: rgb(20, 20, 20);
+}
+ .border-div{
+   background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 5%;
+  padding: 20px;
+  margin-bottom: 20px;
+ 
+}
